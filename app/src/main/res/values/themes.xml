@@ -1,9 +1,32 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Base.Theme.RecipeBook" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:fontFamily">@font/ibm_plex_sans</item>
+        <item name="fontFamily">@font/ibm_plex_sans</item>
+
+        <item name="textAppearanceDisplayLarge">@style/CustomTypeface</item>
+        <item name="textAppearanceDisplayMedium">@style/CustomTypeface</item>
+        <item name="textAppearanceBodyMedium">@style/CustomTypeface</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="CustomTypeface" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">@font/ibm_plex_sans</item>
+        <item name="fontFamily">@font/ibm_plex_sans</item>
     </style>
 
     <style name="Theme.RecipeBook" parent="Base.Theme.RecipeBook" />
+
+    <style name="CircleShapeImgBT" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CircleFAB" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
 </resources>
