@@ -27,6 +27,7 @@
             app:tint="@color/black" />
 
         <TextView
+            android:id="@+id/tvScreenTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Recipe"
@@ -70,7 +71,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/bg_dashed_border"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="fitCenter" />
 
                 <ImageView
                     android:id="@+id/ivUploadPlaceholder"
@@ -113,18 +114,13 @@
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/etRecipeCategory"
+            <Spinner
+                android:id="@+id/spinnerCategory"
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
                 android:layout_marginBottom="24dp"
                 android:background="@drawable/bg_input"
-                android:hint="e.g. Breakfast, Lunch, Desserts"
-                android:inputType="textCapWords"
-                android:paddingHorizontal="16dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray_text"
-                android:textSize="16sp" />
+                android:paddingHorizontal="16dp" />
 
             <TextView
                 android:layout_width="wrap_content"

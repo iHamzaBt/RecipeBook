@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipeBook">
         <activity
-            android:name=".LoginAfterSignupActivity"
+                android:name=".LoginAfterSignupActivity"
             android:exported="false" />
         <activity
             android:name=".AuthActivity"
